@@ -3,47 +3,98 @@
   <head>
     <meta charset="utf-8">
     <title>Paul's Portfolio</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: green;
+      }
+
+      .menu li {
+        float: left;
+      }
+
+      .menu li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .menu li a:hover {
+        background-color: navy;
+      }
+
+      #content {
+        margin: 0 40vw 0 3vw;
+      }
+
+      h2 {
+        font-family: Courier New;
+      }
+
+      .about {
+        background-color: beige;
+        color: red;
+        padding: 10px;
+        font-weight: bold;
+      }
+    </style>
   </head>
+
   <body>
 
-    <h1>Welcome to Paul's Portfolio</h1>
-
-    <hr>
-
-    <h2>About</h2>
-    <p>Paul Scwhartz is a student at BYU. Paul runs a non-profit called A Voice for Good (<a href="https://avoiceforgoodmusic.org">website</a>).</p>
-    <p>Paul likes coding. Paul is married to Amber and has one daughter named Sarah and a son on the way.</p>
-
-    <hr>
-
-    <h2>Projects</h2>
-    <ul>
-      <li>Book of Mormon Interactive Map</li>
-      <li>6 Short Clues game</li>
-      <li>Schwartz Family Pictures website (<a href="https://schwartzfamilypictures.com">visit</a>)</li>
-      <li>One Fold, One Shepherd website (<a href="https://onefoldoneshepherd.org">visit</a>)</li>
+    <ul class="menu">
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
     </ul>
 
-    <hr>
+    <div id="content">
+      <h1>Welcome to Paul's Portfolio</h1>
 
-    <h2>Experience</h2>
-    <ol>
-      <li>Computer programmer for Brother Griffin</li>
-      <li>President of A Voice for Good</li>
-      <li>Owner of Schwartz Family Publishing and Wasatch Instrument and Equipment Rental</li>
-      <li>Have taken CS 142</li>
-      <li>Have been at BYU 4 years</li>
-    </ol>
+      <div class="about">
+        <h2>About</h2>
+        <p>Paul Scwhartz is a student at BYU. Paul runs a non-profit called A Voice for Good (<a href="https://avoiceforgoodmusic.org">website</a>).</p>
+        <p>Paul likes coding. Paul is married to Amber and has one daughter named Sarah and a son on the way.</p>
+      </div>
 
-    <hr>
+      <h2>Projects</h2>
+      <ul>
+        <li>Book of Mormon Interactive Map</li>
+        <li>6 Short Clues game</li>
+        <li>Schwartz Family Pictures website (<a href="https://schwartzfamilypictures.com">visit</a>)</li>
+        <li>One Fold, One Shepherd website (<a href="https://onefoldoneshepherd.org">visit</a>)</li>
+      </ul>
 
-    <h2>Contact</h2>
-    <ul>
-      <li><strong>Email:</strong> thisisanemail@example.com</li>
-      <li><strong>Github:</strong> <a href="https://github.com/showmaker0">https://github.com/showmaker0</a></li>
-      <li><strong>Facebook:</strong> <a href="https://facebook.com">fakeFacebookAccount</a></li>
-    </ul>
-    <p>This is an additional paragraph!!! :)</p>
+      <hr>
+
+      <h2>Experience</h2>
+      <ol>
+        <li>Computer programmer for Brother Griffin</li>
+        <li>President of A Voice for Good</li>
+        <li>Owner of Schwartz Family Publishing and Wasatch Instrument and Equipment Rental</li>
+        <li>Have taken CS 142</li>
+        <li>Have been at BYU 4 years</li>
+      </ol>
+
+      <hr>
+
+      <h2>Contact</h2>
+      <ul>
+        <li><strong>Email:</strong> thisisanemail@example.com</li>
+        <li><strong>Github:</strong> <a href="https://github.com/showmaker0">https://github.com/showmaker0</a></li>
+        <li><strong>Facebook:</strong> <a href="https://facebook.com">fakeFacebookAccount</a></li>
+      </ul>
+    </div>
 
   </body>
 </html>
